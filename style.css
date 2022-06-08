@@ -21,8 +21,39 @@ p, h6 {
     font-family: var(--fnt-roboto);
 }
 
+
 h2, h4 {
     font-family: var(--fnt-righteous);
+}
+
+p {
+    font-size: 1rem;
+    color: var(--clr-gray);
+    line-height: 1.1rem;
+    font-weight: 300;
+}
+
+h2 {
+    color: var(--clr-white);
+    font-size: 2.75rem;
+    font-weight: 400;
+    line-height: 3.37rem;
+}
+
+h4 {
+    color: var(--clr-bold);
+    font-size: 1.625rem;
+    font-weight: 400;
+    line-height: 2rem;
+    margin: 31px 0 17px 19px;
+}
+
+h6 {
+    color: var(--clr-bold);
+    font-weight: 700;
+    font-size: 1rem;
+    line-height: 1.125rem;
+    padding: 8px 0;
 }
 
 body {
@@ -39,13 +70,6 @@ header {
     box-shadow: 0 4px 4px 0px rgba(0, 0, 0, 0.3);
 }
 
-header > h2 {
-    color: var(--clr-white);
-    font-size: 2.75rem;
-    font-weight: 400;
-    line-height: 3.37rem;
-}
-
 header > p {
     color: var(--clr-white);
     font-size: 1rem;
@@ -54,30 +78,18 @@ header > p {
 }
 
 main {
-    margin-top: 31px;
     width: 100%;
 }
 
-.food {
-    width: 100%;
-}
-
-.food > h4 {
-    color: var(--clr-bold);
-    font-size: 1.625rem;
-    font-weight: 400;
-    line-height: 2rem;
-    padding-bottom: 14px;
-}
-
-.food-list {
+.list {
     width: 100%;
     display: flex;
+    padding: 0 19px;
     column-gap: 10px;
     overflow-x: scroll;
 }
 
-.food-list > li > div {
+.item-box {
     background-color: var(--clr-white);
     display: flex;
     flex-direction: column;
@@ -88,21 +100,11 @@ main {
     border-radius: 9px;
 }
 
-.food-description > h6 {
-    font-weight: 700;
-    font-size: 1rem;
-    line-height: 1.125rem;
-    padding: 8px 0;
+.item-box * {
+    width: 144px;
 }
 
-.food-description > p {
-    font-size: 1rem;
-    color: var(--clr-gray);
-    line-height: 1.1rem;
-    font-weight: 300;
-}
-
-.food-description > .food-price {
+.price-style {
     color: var(--clr-black);
     font-size: 1rem;
     font-weight: 400;
