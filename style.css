@@ -1,0 +1,47 @@
+@import url('https://fonts.googleapis.com/css2?family=Righteous&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,500;0,700;1,400;1,500;1,700&display=swap');
+
+:root {
+    --clr-black: #000000;
+    --clr-white: #FFFFFF;
+    --clr-green: #3AD134;
+    --clr-header: #CF2B2B;
+    --clr-bg: #E5E5E5;
+    --clr-bold: #333333;
+    --clr-gray: #A6A6A6;
+    --fnt-righteous: 'Righteous', cursive;
+    --fnt-roboto: 'Roboto', sans-serif;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+main {
+    max-width: 414px;
+    margin: 0 auto;
+}
+
+header {
+    background-color: var(--clr-header);
+    max-width: 614px;
+    height: 92px;
+    padding: 5px 0 0 21px;
+    box-shadow: 0 4px 4px 0px rgba(0, 0, 0, 0.3);
+}
+
+header > h2 {
+    font-family: var(--fnt-righteous);
+    color: var(--clr-white);
+    font-size: 2.75rem;
+    font-weight: 400;
+    line-height: 3.37rem;
+}
+
+header > p {
+    font-family: var(--fnt-roboto);
+    color: var(--clr-white);
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.25rem;
+}
