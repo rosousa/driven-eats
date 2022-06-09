@@ -6,9 +6,9 @@ let drink_price;
 let dessert_price;
 
 function food_choice(class_name){
-    let first_food = document.querySelector('.first-food');
-    let second_food = document.querySelector('.second-food');
-    let third_food = document.querySelector('.third-food');
+    const first_food = document.querySelector('.first-food');
+    const second_food = document.querySelector('.second-food');
+    const third_food = document.querySelector('.third-food');
 
     if(class_name.includes('first-food')){
         first_food.classList.add('selected');
@@ -37,9 +37,9 @@ function food_choice(class_name){
 }
 
 function drink_choice(class_name){
-    let first_drink = document.querySelector('.first-drink');
-    let second_drink = document.querySelector('.second-drink');
-    let third_drink = document.querySelector('.third-drink');
+    const first_drink = document.querySelector('.first-drink');
+    const second_drink = document.querySelector('.second-drink');
+    const third_drink = document.querySelector('.third-drink');
 
     if(class_name.includes('first-drink')){
         first_drink.classList.add('selected');
@@ -68,9 +68,9 @@ function drink_choice(class_name){
 }
 
 function dessert_choice(class_name){
-    let first_dessert = document.querySelector('.first-dessert');
-    let second_dessert = document.querySelector('.second-dessert');
-    let third_dessert = document.querySelector('.third-dessert');
+    const first_dessert = document.querySelector('.first-dessert');
+    const second_dessert = document.querySelector('.second-dessert');
+    const third_dessert = document.querySelector('.third-dessert');
 
     if(class_name.includes('first-dessert')){
         first_dessert.classList.add('selected');
@@ -99,8 +99,12 @@ function dessert_choice(class_name){
 }
 
 function checkout(){
+    const btn = document.querySelector('.checkout');
+    let btn_phrase = document.querySelector('.checkout > p'); 
     if(food && drink && dessert){
-        console.log('Finalizando pedido!');
-        console.log((food_price + drink_price + dessert_price).toFixed(2));
+        //console.log('Finalizando pedido!');
+        //console.log((food_price + drink_price + dessert_price).toFixed(2));
+        btn_phrase.textContent = 'Fechar pedido';
+        btn.classList.add('btn-green');
     }
 }

@@ -4,7 +4,7 @@
 :root {
     --clr-black: #000000;
     --clr-white: #FFFFFF;
-    --clr-green: #51c14d;
+    --clr-green: #32B72F;
     --clr-header: #CF2B2B;
     --clr-bg: #E5E5E5;
     --clr-bold: #333333;
@@ -143,4 +143,9 @@ footer > div > p {
 
 .selected {
     border: 5px solid var(--clr-green);
+}
+
+.btn-green {
+    background-color: var(--clr-green);
+    cursor: pointer;
 }
