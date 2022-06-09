@@ -22,3 +22,24 @@ function food_choice(class_name){
     }
     food = true;
 }
+
+function drink_choice(class_name){
+    let first_drink = document.querySelector('.first-drink');
+    let second_drink = document.querySelector('.second-drink');
+    let third_drink = document.querySelector('.third-drink');
+
+    if(class_name.includes('first-drink')){
+        first_drink.classList.add('selected');
+        second_drink.classList.remove('selected');
+        third_drink.classList.remove('selected');
+    } else if (class_name.includes('second-drink')){
+        second_drink.classList.add('selected');
+        first_drink.classList.remove('selected');
+        third_drink.classList.remove('selected');
+    } else if (class_name.includes('third-drink')){
+        third_drink.classList.add('selected');
+        first_drink.classList.remove('selected');
+        second_drink.classList.remove('selected');
+    }
+    drink = true;
+}
