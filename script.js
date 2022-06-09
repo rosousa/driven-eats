@@ -21,6 +21,7 @@ function food_choice(class_name){
         second_food.classList.remove('selected');
     }
     food = true;
+    checkout();
 }
 
 function drink_choice(class_name){
@@ -42,6 +43,7 @@ function drink_choice(class_name){
         second_drink.classList.remove('selected');
     }
     drink = true;
+    checkout();
 }
 
 function dessert_choice(class_name){
@@ -63,4 +65,11 @@ function dessert_choice(class_name){
         second_dessert.classList.remove('selected');
     }
     dessert = true;
+    checkout();
+}
+
+function checkout(){
+    if(food && drink && dessert){
+        console.log('Finalizando pedido!');
+    }
 }
