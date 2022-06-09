@@ -64,9 +64,13 @@ h6 {
 }
 
 header {
+    position: sticky;
+    z-index: 1;
+    width: 414px;
     background-color: var(--clr-header);
-    width: 100%;
     height: 92px;
+    top: 0;
+    left: 0;
     padding: 5px 0 0 21px;
     box-shadow: 0 4px 4px 0px rgba(0, 0, 0, 0.3);
 }
@@ -91,6 +95,7 @@ main {
 }
 
 .item-box {
+    position: relative;
     background-color: var(--clr-white);
     display: flex;
     flex-direction: column;
@@ -99,6 +104,18 @@ main {
     width: 172px;
     height: 216px;
     border-radius: 9px;
+}
+
+img.check {
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    width: 16px;
+    height: 16px;
+}
+
+.check-remove {
+    display: none;
 }
 
 .item-box * {
@@ -114,6 +131,9 @@ main {
 }
 
 footer {
+    position: sticky;
+    bottom: 0;
+    left: 0;
     background-color: var(--clr-white);
     width: 100%;
     height: 92px;

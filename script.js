@@ -4,6 +4,7 @@ let dessert= false;
 let food_price;
 let drink_price;
 let dessert_price;
+let check;
 
 function food_choice(class_name){
     const first_food = document.querySelector('.first-food');
@@ -14,6 +15,9 @@ function food_choice(class_name){
         first_food.classList.add('selected');
         second_food.classList.remove('selected');
         third_food.classList.remove('selected');
+        first_food.querySelector('img.check').classList.remove('check-remove');
+        second_food.querySelector('img.check').classList.add('check-remove');
+        third_food.querySelector('img.check').classList.add('check-remove');
         food_price = document.querySelector('.first-food .food-price').textContent;
         food_price = food_price.replace('R$ ', '').replace(',', '.');
         food_price = parseFloat(food_price);
@@ -21,6 +25,9 @@ function food_choice(class_name){
         second_food.classList.add('selected');
         first_food.classList.remove('selected');
         third_food.classList.remove('selected');
+        second_food.querySelector('img.check').classList.remove('check-remove');
+        first_food.querySelector('img.check').classList.add('check-remove');
+        third_food.querySelector('img.check').classList.add('check-remove');
         food_price = document.querySelector('.second-food .food-price').textContent;
         food_price = food_price.replace('R$ ', '').replace(',', '.');
         food_price = parseFloat(food_price);
@@ -28,6 +35,9 @@ function food_choice(class_name){
         third_food.classList.add('selected');
         first_food.classList.remove('selected');
         second_food.classList.remove('selected');
+        third_food.querySelector('img.check').classList.remove('check-remove');
+        first_food.querySelector('img.check').classList.add('check-remove');
+        second_food.querySelector('img.check').classList.add('check-remove');
         food_price = document.querySelector('.third-food .food-price').textContent;
         food_price = food_price.replace('R$ ', '').replace(',', '.');
         food_price = parseFloat(food_price);
@@ -45,6 +55,9 @@ function drink_choice(class_name){
         first_drink.classList.add('selected');
         second_drink.classList.remove('selected');
         third_drink.classList.remove('selected');
+        first_drink.querySelector('img.check').classList.remove('check-remove');
+        second_drink.querySelector('img.check').classList.add('check-remove');
+        third_drink.querySelector('img.check').classList.add('check-remove');
         drink_price = document.querySelector('.first-drink .drink-price').textContent;
         drink_price = drink_price.replace('R$ ', '').replace(',', '.');
         drink_price = parseFloat(drink_price);
@@ -52,6 +65,9 @@ function drink_choice(class_name){
         second_drink.classList.add('selected');
         first_drink.classList.remove('selected');
         third_drink.classList.remove('selected');
+        second_drink.querySelector('img.check').classList.remove('check-remove');
+        first_drink.querySelector('img.check').classList.add('check-remove');
+        third_drink.querySelector('img.check').classList.add('check-remove');
         drink_price = document.querySelector('.second-drink .drink-price').textContent;
         drink_price = drink_price.replace('R$ ', '').replace(',', '.');
         drink_price = parseFloat(drink_price);
@@ -59,6 +75,9 @@ function drink_choice(class_name){
         third_drink.classList.add('selected');
         first_drink.classList.remove('selected');
         second_drink.classList.remove('selected');
+        third_drink.querySelector('img.check').classList.remove('check-remove');
+        first_drink.querySelector('img.check').classList.add('check-remove');
+        second_drink.querySelector('img.check').classList.add('check-remove');
         drink_price = document.querySelector('.third-drink .drink-price').textContent;
         drink_price = drink_price.replace('R$ ', '').replace(',', '.');
         drink_price = parseFloat(drink_price);
@@ -76,6 +95,9 @@ function dessert_choice(class_name){
         first_dessert.classList.add('selected');
         second_dessert.classList.remove('selected');
         third_dessert.classList.remove('selected');
+        first_dessert.querySelector('img.check').classList.remove('check-remove');
+        second_dessert.querySelector('img.check').classList.add('check-remove');
+        third_dessert.querySelector('img.check').classList.add('check-remove');
         dessert_price = document.querySelector('.first-dessert .dessert-price').textContent;
         dessert_price = dessert_price.replace('R$ ', '').replace(',', '.');
         dessert_price = parseFloat(dessert_price);
@@ -83,6 +105,9 @@ function dessert_choice(class_name){
         second_dessert.classList.add('selected');
         first_dessert.classList.remove('selected');
         third_dessert.classList.remove('selected');
+        second_dessert.querySelector('img.check').classList.remove('check-remove');
+        first_dessert.querySelector('img.check').classList.add('check-remove');
+        third_dessert.querySelector('img.check').classList.add('check-remove');
         dessert_price = document.querySelector('.second-dessert .dessert-price').textContent;
         dessert_price = dessert_price.replace('R$ ', '').replace(',', '.');
         dessert_price = parseFloat(dessert_price);
@@ -90,6 +115,9 @@ function dessert_choice(class_name){
         third_dessert.classList.add('selected');
         first_dessert.classList.remove('selected');
         second_dessert.classList.remove('selected');
+        third_dessert.querySelector('img.check').classList.remove('check-remove');
+        first_dessert.querySelector('img.check').classList.add('check-remove');
+        second_dessert.querySelector('img.check').classList.add('check-remove');
         dessert_price = document.querySelector('.third-dessert .dessert-price').textContent;
         dessert_price = dessert_price.replace('R$ ', '').replace(',', '.');
         dessert_price = parseFloat(dessert_price);
@@ -99,11 +127,11 @@ function dessert_choice(class_name){
 }
 
 function checkout(){
-    const btn = document.querySelector('.checkout');
-    let btn_phrase = document.querySelector('.checkout > p'); 
+    const btn = document.querySelector('.order');
+    let btn_phrase = document.querySelector('.order > p'); 
     if(food && drink && dessert){
-        //console.log('Finalizando pedido!');
-        //console.log((food_price + drink_price + dessert_price).toFixed(2));
+        console.log('Finalizando pedido!');
+        console.log((food_price + drink_price + dessert_price).toFixed(2));
         btn_phrase.textContent = 'Fechar pedido';
         btn.classList.add('btn-green');
     }
