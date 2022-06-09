@@ -14,143 +14,168 @@
             <p>Sua comida em 6 minutos</p>
         </header>
         <main>
-            <div class="food">
-                <h4>Primeiro, seu prato</h4>
-                <ul class="list">
-                    <li>
-                        <div class="item-box first-food" onclick="food_choice(this.className);">
-                            <img
-                                src="./assets/frango_yin_yang.png"
-                                alt="Frango Yin Yang"
-                            />
-                            <div>
-                                <h6>Frango Yin Yang</h6>
-                                <p>
-                                    Um pouco de batata, <br />um pouco de salada
-                                </p>
-                                <p class="food-price price-style">R$ 14,90</p>
+            <div class="content">
+                <div class="food">
+                    <h4>Primeiro, seu prato</h4>
+                    <ul class="list">
+                        <li>
+                            <div class="item-box first-food" onclick="food_choice(this.className);">
+                                <img
+                                    src="./assets/frango_yin_yang.png"
+                                    alt="Frango Yin Yang"
+                                />
+                                <div>
+                                    <h6>Frango Yin Yang</h6>
+                                    <p>
+                                        Um pouco de batata, <br />um pouco de salada
+                                    </p>
+                                    <p class="food-price price-style">R$ 14,90</p>
+                                </div>
+                                    <img src="./assets/check.svg" class="check check-remove">
                             </div>
+                        </li>
+                        <li>
+                            <div class="item-box second-food" onclick="food_choice(this.className);">
+                                <img
+                                    src="./assets/frango_yin_yang.png"
+                                    alt="Frango Yin Yang"
+                                />
+                                <div>
+                                    <h6>Frango Yin Yang</h6>
+                                    <p>
+                                        Um pouco de batata, <br />um pouco de salada
+                                    </p>
+                                    <p class="food-price price-style">R$ 14,90</p>
+                                </div>
                                 <img src="./assets/check.svg" class="check check-remove">
-                        </div>
-                    </li>
-                    <li>
-                        <div class="item-box second-food" onclick="food_choice(this.className);">
-                            <img
-                                src="./assets/frango_yin_yang.png"
-                                alt="Frango Yin Yang"
-                            />
-                            <div>
-                                <h6>Frango Yin Yang</h6>
-                                <p>
-                                    Um pouco de batata, <br />um pouco de salada
-                                </p>
-                                <p class="food-price price-style">R$ 14,90</p>
                             </div>
-                            <img src="./assets/check.svg" class="check check-remove">
-                        </div>
-                    </li>
-                    <li>
-                        <div class="item-box third-food" onclick="food_choice(this.className);">
-                            <img
-                                src="./assets/frango_yin_yang.png"
-                                alt="Frango Yin Yang"
-                            />
-                            <div>
-                                <h6>Frango Yin Yang</h6>
-                                <p>
-                                    Um pouco de batata, <br />um pouco de salada
-                                </p>
-                                <p class="food-price price-style">R$ 14,90</p>
+                        </li>
+                        <li>
+                            <div class="item-box third-food" onclick="food_choice(this.className);">
+                                <img
+                                    src="./assets/frango_yin_yang.png"
+                                    alt="Frango Yin Yang"
+                                />
+                                <div>
+                                    <h6>Frango Yin Yang</h6>
+                                    <p>
+                                        Um pouco de batata, <br />um pouco de salada
+                                    </p>
+                                    <p class="food-price price-style">R$ 14,90</p>
+                                </div>
+                                <img src="./assets/check.svg" class="check check-remove">
                             </div>
-                            <img src="./assets/check.svg" class="check check-remove">
-                        </div>
-                    </li>
-                </ul>
+                        </li>
+                    </ul>
+                </div>
+                <div class="drink">
+                    <h4>Agora, sua bebida</h4>
+                    <ul class="list">
+                        <li>
+                            <div class="item-box first-drink" onclick="drink_choice(this.className);">
+                                <img
+                                    src="./assets/coquinha_gelada.png"
+                                    alt="Coquinha Gelada"
+                                />
+                                <div>
+                                    <h6>Coquinha gelada</h6>
+                                    <p>Lata 350ml</p>
+                                    <p class="drink-price price-style">R$ 4,90</p>
+                                </div>
+                                <img src="./assets/check.svg" class="check check-remove">
+                            </div>
+                        </li>
+                        <li>
+                            <div class="item-box second-drink" onclick="drink_choice(this.className);">
+                                <img
+                                    src="./assets/coquinha_gelada.png"
+                                    alt="Coquinha Gelada"
+                                />
+                                <div>
+                                    <h6>Coquinha gelada</h6>
+                                    <p>Lata 350ml</p>
+                                    <p class="drink-price price-style">R$ 4,90</p>
+                                </div>
+                                <img src="./assets/check.svg" class="check check-remove">
+                            </div>
+                        </li>
+                        <li>
+                            <div class="item-box third-drink" onclick="drink_choice(this.className);">
+                                <img
+                                    src="./assets/coquinha_gelada.png"
+                                    alt="Coquinha Gelada"
+                                />
+                                <div>
+                                    <h6>Coquinha gelada</h6>
+                                    <p>Lata 350ml</p>
+                                    <p class="drink-price price-style">R$ 4,90</p>
+                                </div>
+                                <img src="./assets/check.svg" class="check check-remove">
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <div class="dessert">
+                    <h4>Agora, sua bebida</h4>
+                    <ul class="list">
+                        <li>
+                            <div class="item-box first-dessert" onclick="dessert_choice(this.className);">
+                                <img src="./assets/pudim.png" alt="Pudim" />
+                                <div>
+                                    <h6>Pudim</h6>
+                                    <p>Apenas pudim</p>
+                                    <p class="dessert-price price-style">R$ 7,90</p>
+                                </div>
+                                <img src="./assets/check.svg" class="check check-remove">
+                            </div>
+                        </li>
+                        <li>
+                            <div class="item-box second-dessert" onclick="dessert_choice(this.className);">
+                                <img src="./assets/pudim.png" alt="Pudim" />
+                                <div>
+                                    <h6>Pudim</h6>
+                                    <p>Apenas pudim</p>
+                                    <p class="dessert-price price-style">R$ 7,90</p>
+                                </div>
+                                <img src="./assets/check.svg" class="check check-remove">
+                            </div>
+                        </li>
+                        <li>
+                            <div class="item-box third-dessert" onclick="dessert_choice(this.className);">
+                                <img src="./assets/pudim.png" alt="Pudim" />
+                                <div>
+                                    <h6>Pudim</h6>
+                                    <p>Apenas pudim</p>
+                                    <p class="dessert-price price-style">R$ 7,90</p>
+                                </div>
+                                <img src="./assets/check.svg" class="check check-remove">
+                            </div>
+                        </li>
+                    </ul>
+                </div>
             </div>
-            <div class="drink">
-                <h4>Agora, sua bebida</h4>
-                <ul class="list">
-                    <li>
-                        <div class="item-box first-drink" onclick="drink_choice(this.className);">
-                            <img
-                                src="./assets/coquinha_gelada.png"
-                                alt="Coquinha Gelada"
-                            />
+            <div class="finish-order">
+                <div>
+                    <div class="confirm-order">
+                        <h6>Confirme seu pedido</h6>
+                    </div>
+                    <div class="total-price">
+                        <div class="order-description">
                             <div>
-                                <h6>Coquinha gelada</h6>
-                                <p>Lata 350ml</p>
-                                <p class="drink-price price-style">R$ 4,90</p>
+                                <p>Frango Yin Yang</p>
+                                <p>Coquinha gelada</p>
+                                <p>Pudim</p>
+                                <h6>TOTAL</h6>
                             </div>
-                            <img src="./assets/check.svg" class="check check-remove">
-                        </div>
-                    </li>
-                    <li>
-                        <div class="item-box second-drink" onclick="drink_choice(this.className);">
-                            <img
-                                src="./assets/coquinha_gelada.png"
-                                alt="Coquinha Gelada"
-                            />
                             <div>
-                                <h6>Coquinha gelada</h6>
-                                <p>Lata 350ml</p>
-                                <p class="drink-price price-style">R$ 4,90</p>
+                                <p>14,90</p>
+                                <p>4,90</p>
+                                <p>7,90</p>
+                                <h6>R$ 27,70</h6>
                             </div>
-                            <img src="./assets/check.svg" class="check check-remove">
                         </div>
-                    </li>
-                    <li>
-                        <div class="item-box third-drink" onclick="drink_choice(this.className);">
-                            <img
-                                src="./assets/coquinha_gelada.png"
-                                alt="Coquinha Gelada"
-                            />
-                            <div>
-                                <h6>Coquinha gelada</h6>
-                                <p>Lata 350ml</p>
-                                <p class="drink-price price-style">R$ 4,90</p>
-                            </div>
-                            <img src="./assets/check.svg" class="check check-remove">
-                        </div>
-                    </li>
-                </ul>
-            </div>
-            <div class="dessert">
-                <h4>Agora, sua bebida</h4>
-                <ul class="list">
-                    <li>
-                        <div class="item-box first-dessert" onclick="dessert_choice(this.className);">
-                            <img src="./assets/pudim.png" alt="Pudim" />
-                            <div>
-                                <h6>Pudim</h6>
-                                <p>Apenas pudim</p>
-                                <p class="dessert-price price-style">R$ 7,90</p>
-                            </div>
-                            <img src="./assets/check.svg" class="check check-remove">
-                        </div>
-                    </li>
-                    <li>
-                        <div class="item-box second-dessert" onclick="dessert_choice(this.className);">
-                            <img src="./assets/pudim.png" alt="Pudim" />
-                            <div>
-                                <h6>Pudim</h6>
-                                <p>Apenas pudim</p>
-                                <p class="dessert-price price-style">R$ 7,90</p>
-                            </div>
-                            <img src="./assets/check.svg" class="check check-remove">
-                        </div>
-                    </li>
-                    <li>
-                        <div class="item-box third-dessert" onclick="dessert_choice(this.className);">
-                            <img src="./assets/pudim.png" alt="Pudim" />
-                            <div>
-                                <h6>Pudim</h6>
-                                <p>Apenas pudim</p>
-                                <p class="dessert-price price-style">R$ 7,90</p>
-                            </div>
-                            <img src="./assets/check.svg" class="check check-remove">
-                        </div>
-                    </li>
-                </ul>
+                    </div>
+                </div>
             </div>
         </main>
         <footer>

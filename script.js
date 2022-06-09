@@ -134,5 +134,10 @@ function checkout(){
         console.log((food_price + drink_price + dessert_price).toFixed(2));
         btn_phrase.textContent = 'Fechar pedido';
         btn.classList.add('btn-green');
+        orderScreen();
     }
+}
+
+function orderScreen (){
+    console.log("It's working!!");
 }
