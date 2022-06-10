@@ -154,7 +154,7 @@
                     </ul>
                 </div>
             </div>
-            <div class="finish-order">
+            <div class="finish-order hidden">
                 <div>
                     <div class="confirm-order">
                         <h6>Confirme seu pedido</h6>
@@ -175,11 +175,13 @@
                             </div>
                         </div>
                     </div>
+                    <button class="order-btn" onclick="sendOrder();">Tudo certo, pode pedir!</button>
+                    <button class="cancel-order" onclick="cancelOrder();">Cancelar</button>
                 </div>
             </div>
         </main>
         <footer>
-            <div class="order">
+            <div class="order" onclick="orderScreen(this.className);">
                 <p>Selecione os 3 itens <br />para fechar o pedido</p>
             </div>
         </footer>

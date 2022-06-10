@@ -134,10 +134,27 @@ function checkout(){
         console.log((food_price + drink_price + dessert_price).toFixed(2));
         btn_phrase.textContent = 'Fechar pedido';
         btn.classList.add('btn-green');
-        orderScreen();
     }
 }
 
-function orderScreen (){
-    console.log("It's working!!");
+function orderScreen (className){
+    const screenOrder = document.querySelector('.finish-order');
+    const body = document.querySelector('body');
+    if(className.includes('btn-green')){
+        screenOrder.classList.toggle('hidden');
+        body.classList.toggle('scroll');
+    }
+}
+
+function cancelOrder(){
+    const screenOrder = document.querySelector('.finish-order');
+    const body = document.querySelector('body');
+    screenOrder.classList.toggle('hidden');
+    body.classList.toggle('scroll');
+}
+
+function sendOrder(){
+    const name = prompt('Qual o seu nome?');
+    const address = prompt('Qual o seu endereço?')
+    console.log([name, address]);
 }
