@@ -156,5 +156,14 @@ function cancelOrder(){
 function sendOrder(){
     const name = prompt('Qual o seu nome?');
     const address = prompt('Qual o seu endereço?')
-    console.log([name, address]);
+    const number = prompt('Qual o seu número?')
+    const message = encodeURIComponent(`Olá, gostaria de fazer o pedido:
+    - Prato: Frango Yin Yang
+    - Bebida: Coquinha Gelada
+    - Sobremesa: Pudim
+    Total: R$ 27.70
+    
+    Nome: ${name}
+    Endereço: ${address}`);
+    window.open(`https://wa.me/${number}?text=${message}`, '_blank');
 }
