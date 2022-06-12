@@ -89,7 +89,7 @@ function cancelOrder(){
 function sendOrder(){
     const name = prompt('Qual o seu nome?');
     const address = prompt('Qual o seu endereço?');
-    const number = 5121989065765;
+    const number = 5121955555555;
     const message = encodeURIComponent(`Olá, gostaria de fazer o pedido:
     - Prato: ${food_name.textContent}
     - Bebida: ${drink_name.textContent}

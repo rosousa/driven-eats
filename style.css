@@ -76,7 +76,7 @@ header {
     top: 0;
     left: 0;
     padding: 5px 0 0 21px;
-    box-shadow: 0 4px 4px 0px rgba(0, 0, 0, 0.3);
+    box-shadow: 0 11px 8px -8px rgba(0, 0, 0, 0.3);
 }
 
 header > p {
