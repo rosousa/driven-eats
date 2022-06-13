@@ -10,7 +10,6 @@ let dessert_price;
 let total;
 let check;
 
-
 function food_choice(class_name){
     const food_selected = document.querySelector('.food-selected');
     if(food_selected !== null){
